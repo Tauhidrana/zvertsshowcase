@@ -31,9 +31,9 @@ export function UIShowcase({
       <div className="grid gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
         {/* Screenshot */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 20 }}
+          initial={{ opacity: 0, scale: 0.97, y: 12 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.5, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
           <div className="absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_50%,rgba(184,255,44,0.18),transparent_70%)] blur-2xl" />
