@@ -3,12 +3,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Slide1Hero } from "./slides/Slide1Hero";
 import { Slide2Problem } from "./slides/Slide2Problem";
 import { Slide3Solution } from "./slides/Slide3Solution";
-import { Slide4Features } from "./slides/Slide4Features";
-import { Slide5Workflow } from "./slides/Slide5Workflow";
-import { Slide6Tech } from "./slides/Slide6Tech";
-import { Slide7Why } from "./slides/Slide7Why";
+import { SlideDashboard } from "./slides/SlideDashboard";
+import { SlideCourses } from "./slides/SlideCourses";
+import { SlideGrowth } from "./slides/SlideGrowth";
+import { SlidePayments } from "./slides/SlidePayments";
+import { SlideSettings } from "./slides/SlideSettings";
+import { SlideNotifications } from "./slides/SlideNotifications";
 import { Slide8Future } from "./slides/Slide8Future";
-import { Slide9Business } from "./slides/Slide9Business";
 import { Slide10Thanks } from "./slides/Slide10Thanks";
 import { ShortcutsModal } from "./ShortcutsModal";
 
@@ -16,12 +17,13 @@ const slides = [
   { id: "hero", title: "Hero", Component: Slide1Hero },
   { id: "problem", title: "Problem", Component: Slide2Problem },
   { id: "solution", title: "Solution", Component: Slide3Solution },
-  { id: "features", title: "Core Features", Component: Slide4Features },
-  { id: "workflow", title: "Live Workflow", Component: Slide5Workflow },
-  { id: "tech", title: "Technology", Component: Slide6Tech },
-  { id: "why", title: "Why ZverTs", Component: Slide7Why },
+  { id: "dashboard", title: "Dashboard", Component: SlideDashboard },
+  { id: "courses", title: "Courses", Component: SlideCourses },
+  { id: "growth", title: "Growth", Component: SlideGrowth },
+  { id: "payments", title: "Payments", Component: SlidePayments },
+  { id: "settings", title: "Settings", Component: SlideSettings },
+  { id: "notifications", title: "Notifications", Component: SlideNotifications },
   { id: "future", title: "Future Vision", Component: Slide8Future },
-  { id: "business", title: "Business", Component: Slide9Business },
   { id: "thanks", title: "Thank You", Component: Slide10Thanks },
 ];
 
