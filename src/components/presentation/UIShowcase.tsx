@@ -31,9 +31,9 @@ export function UIShowcase({
       <div className="grid gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
         {/* Screenshot */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 20 }}
+          initial={{ opacity: 0, scale: 0.97, y: 12 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.5, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
           <div className="absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_50%,rgba(184,255,44,0.18),transparent_70%)] blur-2xl" />
@@ -58,9 +58,9 @@ export function UIShowcase({
         {/* Features */}
         <div className="flex flex-col justify-center">
           <motion.p
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="mb-8 max-w-md text-lg leading-relaxed text-[#AEB6C2]"
           >
             {subtitle}
@@ -70,9 +70,9 @@ export function UIShowcase({
             {features.map((f, i) => (
               <motion.li
                 key={f.label}
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 12 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.55 + i * 0.06 }}
+                transition={{ duration: 0.35, delay: 0.25 + i * 0.04 }}
                 className="flex items-center gap-3 rounded-xl border border-white/[0.06] bg-white/[0.02] px-4 py-3 backdrop-blur-sm"
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#B8FF2C]/10 text-[#B8FF2C]">
@@ -87,7 +87,7 @@ export function UIShowcase({
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
+              transition={{ duration: 0.4, delay: 0.5 }}
               className="mt-6 border-l-2 border-[#B8FF2C]/40 pl-4 text-sm italic text-[#AEB6C2]"
             >
               {note}
