@@ -134,10 +134,10 @@ export function Presentation() {
           <motion.div
             key={slides[index].id}
             custom={direction}
-            initial={{ opacity: 0, y: direction > 0 ? 40 : -40 }}
+            initial={{ opacity: 0, y: direction > 0 ? 24 : -24 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: direction > 0 ? -40 : 40 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            exit={{ opacity: 0, y: direction > 0 ? -24 : 24 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0"
           >
             <Current />
